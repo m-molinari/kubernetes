@@ -95,6 +95,28 @@ Enable Metallb
 ```
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.10/config/manifests/metallb-native.yaml
 ```
+Metallb enable address pool
+```
+tee ipaddress_pools.yaml <<EOF
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: production
+  namespace: metallb-system
+spec:
+  addresses:
+  - X.X.X.X-X.X.X.X
+---
+apiVersion: metallb.io/v1beta1
+kind: L2Advertisement
+metadata:
+  name: l2-advert
+  namespace: metallb-system
+EOF
+```
+kubectl apply -f ipaddress_pools.yaml
+
 
 DASHBOARD
 ```

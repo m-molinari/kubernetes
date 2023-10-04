@@ -7,7 +7,7 @@ Install k3s
 curl -sfL https://get.k3s.io | bash -s - --write-kubeconfig-mode 644
 ```
 ```
-Expected installation output – The process should complete in few seconds / minutes.
+Expected installation output
 [INFO]  Finding release for channel stable
 [INFO]  Using v1.27.4+k3s1 as release
 [INFO]  Downloading hash https://github.com/k3s-io/k3s/releases/download/v1.27.4+k3s1/sha256sum-amd64.txt

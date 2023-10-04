@@ -6,6 +6,7 @@ Install k3s
 ```
 curl -sfL https://get.k3s.io | bash -s - --write-kubeconfig-mode 644
 ```
+```
 Expected installation output – The process should complete in few seconds / minutes.
 [INFO]  Finding release for channel stable
 [INFO]  Using v1.27.4+k3s1 as release
@@ -24,6 +25,7 @@ Expected installation output – The process should complete in few seconds / mi
 [INFO]  systemd: Enabling k3s unit
 Created symlink /etc/systemd/system/multi-user.target.wants/k3s.service → /etc/systemd/system/k3s.service.
 [INFO]  systemd: Starting k3s
+```
 
 Get nodes
 ```

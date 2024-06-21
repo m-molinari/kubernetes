@@ -86,7 +86,7 @@ kubectl label node xxx node-role.kubernetes.io/worker=worker
 
 Enable metrics
 ```
-kubectl apply -f https://raw.githubusercontent.com/techiescamp/kubeadm-scripts/main/manifests/metrics-server.yaml
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.7.1/components.yaml
 
 kubectl top nodes
 ```
